@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2396aa0e-7078-4728-b8b0-624c5c613f01}</ProjectGuid>
+    <RootNamespace>dxFeedGraalCxxApiSampleVS</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental />
+    <OutDir>$(SolutionDir)out\build\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)out\build\$(Platform)-$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)out\build\$(Platform)-$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)out\build\$(Platform)-$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;DXFCPP_USE_DLLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)third_party\dxfeed-graal-cxx-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)third_party\dxfeed-graal-cxx-api\bin</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dxFeedGraalCxxApi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;DXFCPP_USE_DLLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)third_party\dxfeed-graal-cxx-api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)third_party\dxfeed-graal-cxx-api\bin</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dxFeedGraalCxxApi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\api.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\api\DXEndpoint.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\api\DXFeed.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\api\DXFeedSubscription.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\api\osub\WildcardSymbol.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\entity\Entity.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\entity\SharedEntity.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\candle\Candle.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\candle\CandleSymbol.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\DXEvent.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\EventFlag.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\EventMapper.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\EventType.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\EventTypeEnum.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\IndexedEvent.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\IndexedEventSource.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\LastingEvent.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\AnalyticOrder.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Direction.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\MarketEvent.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\OptionSale.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Order.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\OrderAction.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\OrderBase.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\OrderSource.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\PriceType.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Profile.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Quote.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\ShortSaleRestriction.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Side.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\SpreadOrder.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Summary.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\TimeAndSale.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\TimeAndSaleType.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Trade.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\TradeBase.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\TradeETH.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\TradingStatus.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\misc\Configuration.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\misc\Message.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\option\Greeks.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\option\Series.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\option\TheoPrice.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\option\Underlying.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\TimeSeriesEvent.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\CEntryPointErrors.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\Common.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\Conf.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\context\ApiContext.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\Enum.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\EventClassList.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\Handler.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\Id.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\Isolate.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\JavaObjectHandler.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\managers\DXEndpointManager.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\managers\DXFeedSubscriptionManager.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\managers\EntityManager.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\managers\ErrorHandlingManager.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\NonCopyable.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\RawListWrapper.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\SymbolList.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\utils\debug\Debug.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\utils\StringUtils.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\symbols\StringSymbol.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\symbols\SymbolMapper.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\symbols\SymbolWrapper.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\system\System.hpp" />
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_c_api\api.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="third_party\dxfeed-graal-cxx-api\bin\DxFeedGraalNativeSdk.dll">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="third_party\dxfeed-graal-cxx-api\bin\dxFeedGraalCxxApi.dll">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="third_party\dxfeed-graal-cxx-api\bin\dxFeedGraalCxxApi.lib" />
+    <None Include="third_party\dxfeed-graal-cxx-api\bin\dxFeedGraalCxxApi_static.lib">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="dxfeed.properties">
+      <FileType>Document</FileType>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

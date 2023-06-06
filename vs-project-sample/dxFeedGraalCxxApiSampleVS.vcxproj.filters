@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_c_api\api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\api\osub\WildcardSymbol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\api\DXEndpoint.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\api\DXFeed.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\api\DXFeedSubscription.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\entity\Entity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\entity\SharedEntity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\candle\Candle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\candle\CandleSymbol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\AnalyticOrder.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Direction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\MarketEvent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\OptionSale.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Order.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\OrderAction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\OrderBase.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\OrderSource.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\PriceType.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Profile.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Quote.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\ShortSaleRestriction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Side.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\SpreadOrder.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Summary.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\TimeAndSale.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\TimeAndSaleType.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\Trade.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\TradeBase.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\TradeETH.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\market\TradingStatus.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\misc\Configuration.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\misc\Message.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\option\Greeks.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\option\Series.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\option\TheoPrice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\option\Underlying.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\DXEvent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\EventFlag.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\EventMapper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\EventType.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\EventTypeEnum.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\IndexedEvent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\IndexedEventSource.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\LastingEvent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\event\TimeSeriesEvent.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\context\ApiContext.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\managers\DXEndpointManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\managers\DXFeedSubscriptionManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\managers\EntityManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\managers\ErrorHandlingManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\utils\debug\Debug.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\utils\StringUtils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\CEntryPointErrors.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\Common.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\Conf.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\Enum.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\EventClassList.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\Handler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\Id.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\Isolate.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\JavaObjectHandler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\NonCopyable.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\RawListWrapper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\internal\SymbolList.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\symbols\StringSymbol.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\symbols\SymbolMapper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\symbols\SymbolWrapper.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\system\System.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="third_party\dxfeed-graal-cxx-api\include\dxfeed_graal_cpp_api\api.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="third_party\dxfeed-graal-cxx-api\bin\DxFeedGraalNativeSdk.dll" />
+    <CopyFileToFolders Include="third_party\dxfeed-graal-cxx-api\bin\dxFeedGraalCxxApi.dll" />
+    <CopyFileToFolders Include="dxfeed.properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="third_party\dxfeed-graal-cxx-api\bin\dxFeedGraalCxxApi.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="third_party\dxfeed-graal-cxx-api\bin\dxFeedGraalCxxApi_static.lib" />
+  </ItemGroup>
+</Project>
