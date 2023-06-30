@@ -234,9 +234,9 @@
     <CopyFileToFolders Include="dxfeed.properties" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="third_party\dxfeed-graal-cxx-api\bin\dxFeedGraalCxxApi.lib" />
+    <Library Include="third_party\dxfeed-graal-cxx-api\lib\dxFeedGraalCxxApi.lib" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="third_party\dxfeed-graal-cxx-api\bin\dxFeedGraalCxxApi_static.lib" />
+    <None Include="third_party\dxfeed-graal-cxx-api\lib\dxFeedGraalCxxApi_static.lib" />
   </ItemGroup>
 </Project>

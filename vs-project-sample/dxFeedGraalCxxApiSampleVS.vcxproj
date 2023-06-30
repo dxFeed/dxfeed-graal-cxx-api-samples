@@ -121,7 +121,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)third_party\dxfeed-graal-cxx-api\bin</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)third_party\dxfeed-graal-cxx-api\bin;$(SolutionDir)third_party\dxfeed-graal-cxx-api\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>dxFeedGraalCxxApi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -143,7 +143,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)third_party\dxfeed-graal-cxx-api\bin</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)third_party\dxfeed-graal-cxx-api\bin;$(SolutionDir)third_party\dxfeed-graal-cxx-api\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>dxFeedGraalCxxApi.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -232,8 +232,8 @@
     </CopyFileToFolders>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="third_party\dxfeed-graal-cxx-api\bin\dxFeedGraalCxxApi.lib" />
-    <None Include="third_party\dxfeed-graal-cxx-api\bin\dxFeedGraalCxxApi_static.lib">
+    <Library Include="third_party\dxfeed-graal-cxx-api\lib\dxFeedGraalCxxApi.lib" />
+    <None Include="third_party\dxfeed-graal-cxx-api\lib\dxFeedGraalCxxApi_static.lib">
       <FileType>Document</FileType>
     </None>
   </ItemGroup>

@@ -45,3 +45,4 @@ cmake-build-*/
 
 x64/
 .vs/
+third_party/dxfeed-graal-cxx-api/**
