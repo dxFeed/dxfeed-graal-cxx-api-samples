@@ -44,3 +44,5 @@ cmake-build-*/
 *.PVS-Studio.*
 
 third_party/dxfeed-graal-cxx-api/**
+.vs/
+out/
