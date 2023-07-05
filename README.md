@@ -6,6 +6,8 @@
   add [dxfeed-graal-cxx-api](https://github.com/dxFeed/dxfeed-graal-cxx-api) as a **CMake** subproject.
 * [vs-project-sample](vs-project-sample/README.md) - demonstrates how to
   add [dxfeed-graal-cxx-api](https://github.com/dxFeed/dxfeed-graal-cxx-api) to **Visual Studio** solution.
+* [dll-sample](dll-sample/README.md) - demonstrates how to add [dxfeed-graal-cxx-api](https://github.com/dxFeed/dxfeed-graal-cxx-api) to DLL plugin.
+
 
 ## Usage
 
