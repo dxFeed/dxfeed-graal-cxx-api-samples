@@ -9,7 +9,7 @@ target_link_libraries(dllsample-dxfeed-plugin dllsample-plugin-api)
 
 include(FetchContent)
 
-FetchContent_Declare(dxFeedGraalCxxApi GIT_REPOSITORY "https://github.com/dxFeed/dxfeed-graal-cxx-api.git" GIT_TAG v0.1.0-alpha)
+FetchContent_Declare(dxFeedGraalCxxApi GIT_REPOSITORY "https://github.com/dxFeed/dxfeed-graal-cxx-api.git" GIT_TAG v0.1.2-alpha)
 FetchContent_MakeAvailable(dxFeedGraalCxxApi)
 
 target_link_libraries(dllsample-dxfeed-plugin dxfcxx)
