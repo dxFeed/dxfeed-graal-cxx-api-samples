@@ -6,7 +6,7 @@
 
 ## Installation
 
-Copy the [zip bundle](https://github.com/dxFeed/dxfeed-graal-cxx-api/releases/tag/v0.1.2-alpha) into
+Copy the [zip bundle](https://github.com/dxFeed/dxfeed-graal-cxx-api/releases/tag/v0.1.3-alpha) into
 `third_party/dxfeed-graal-cxx-api` directory.
 
 ## Build
