@@ -29,6 +29,8 @@ jobs:
         with:
           repository: dxFeed/dxfeed-graal-cxx-api
           fetch-tags: true
+          fetch-depth: 0
+          path: dxfeed-graal-cxx-api
       - id: get_latest_tag
         run: |
           echo "tag=$(git describe --abbrev=0 --tags)"
