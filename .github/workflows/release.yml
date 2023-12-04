@@ -27,7 +27,8 @@ jobs:
     steps:
       - uses: actions/checkout@master
         with:
-          name: https://github.com/dxFeed/dxfeed-graal-cxx-api
+          repository: dxFeed/dxfeed-graal-cxx-api
+          fetch-tags: true
       - id: get_latest_tag
         run: |
           echo "tag=$(git describe --abbrev=0 --tags)"
