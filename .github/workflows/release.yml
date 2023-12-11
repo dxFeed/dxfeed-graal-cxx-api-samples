@@ -37,4 +37,26 @@ jobs:
           echo "version=${{ steps.get_latest_tag.outputs.tag }}"
           echo "version=${{ steps.get_latest_tag.outputs.tag }}" >> $GITHUB_OUTPUT
           echo "tag_name=${{ format('refs/tags/{0}', steps.get_latest_tag.outputs.tag) }}"
-          echo "tag_name=${{ format('refs/tags/{0}', steps.get_latest_tag.outputs.tag) }}" >> $GITHUB_OUTPUT 
+          echo "tag_name=${{ format('refs/tags/{0}', steps.get_latest_tag.outputs.tag) }}" >> $GITHUB_OUTPUT
+
+  build_package_and_upload:
+    name: Build, Package & Upload
+    needs: [ get_version ]
+    strategy:
+      matrix:
+        os: [ windows-latest, macos-13, ubuntu-22.04 ]
+        # buildType: [ Release, Debug, RelWithDebInfo, MinSizeRel ]
+        # buildType: [ Release, Debug ]
+    runs-on: ${{ matrix.os }}
+    env:
+      XCODE_VERSION: '15.0'
+      GCC_VERSION: '12'
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Prepare (Win)
+        if: ${{ contains(matrix.os, 'windows') }}
+        shell: pwsh
+        run: |
+          scripts/prepare-win.ps1 "${{needs.get_version.outputs.version}}"

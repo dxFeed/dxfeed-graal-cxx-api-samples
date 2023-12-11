@@ -6,7 +6,7 @@
 
 ## Installation
 
-Copy the [zip bundle](https://github.com/dxFeed/dxfeed-graal-cxx-api/releases/tag/v0.1.3-alpha) into
+Unpack the contents of the [zip bundle](https://github.com/dxFeed/dxfeed-graal-cxx-api/releases/tag/v1.2.0-beta) into
 `third_party/dxfeed-graal-cxx-api` directory.
 
 ## Build
@@ -16,3 +16,6 @@ Click `Build Solution` on `dxFeedGraalCxxApiSampleVS` solution.
 ## Know issue
 
 On Visual Studio Version 2022 (17.6.2) and higher debug build does not work.
+
+
+
