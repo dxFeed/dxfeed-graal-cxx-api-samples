@@ -41,7 +41,7 @@ else
     $VsProjectSampleReadmePath = "$VsProjectSamplePath/README.md"
     (Get-Content $VsProjectSampleReadmePath -raw) -replace "$DxFeedGraalCxxApiUri/releases/tag/(v\d+\.\d+\.\d+[^)]*)", "$DxFeedGraalCxxApiArtifactUri" |
             Set-Content $VsProjectSampleReadmePath
-    (Get-Content $VsProjectSampleReadmePath -raw) -replace "$DxFeedGraalCxxApiUri/releases/tag/(v\d+\.\d+\.\d+[^)]*)", "$DxFeedGraalCxxApiArtifactUri" |
+    (Get-Content $VsProjectSampleReadmePath -raw) -replace "$DxFeedGraalCxxApiUri/releases/download/(v\d+\.\d+\.\d+[^)]*)", "$DxFeedGraalCxxApiArtifactUri" |
             Set-Content $VsProjectSampleReadmePath
 
     Get-Content $VsProjectSampleReadmePath -raw
