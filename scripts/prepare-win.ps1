@@ -39,7 +39,9 @@ else
     Get-ChildItem "$VsProjectSampleThirdPartyPath"
 
     $VsProjectSampleReadmePath = "$VsProjectSamplePath/README.md"
-    (Get-Content $VsProjectSampleReadmePath -raw) -replace "$DxFeedGraalCxxApiUri/releases/tag/(v\d+\.\d+\.\d+[^)]*)", "$DxFeedGraalCxxApiUri/releases/tag/$DxFeedGraalCxxApiVersion" |
+    (Get-Content $VsProjectSampleReadmePath -raw) -replace "$DxFeedGraalCxxApiUri/releases/tag/(v\d+\.\d+\.\d+[^)]*)", "$DxFeedGraalCxxApiArtifactUri" |
+            Set-Content $VsProjectSampleReadmePath
+    (Get-Content $VsProjectSampleReadmePath -raw) -replace "$DxFeedGraalCxxApiUri/releases/tag/(v\d+\.\d+\.\d+[^)]*)", "$DxFeedGraalCxxApiArtifactUri" |
             Set-Content $VsProjectSampleReadmePath
 
     Get-Content $VsProjectSampleReadmePath -raw
