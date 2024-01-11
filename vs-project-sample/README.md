@@ -15,9 +15,5 @@ Click `Build Solution` on `dxFeedGraalCxxApiSampleVS` solution.
 
 ## Know issue
 
-On Visual Studio Version 2022 (17.6.2) and higher debug build does not work.
-
-
-
-
-
+For stable work of the project it is necessary to use Debug version of the API for Debug version of the project 
+and Release version of the API for Release version of the project.

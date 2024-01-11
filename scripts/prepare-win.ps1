@@ -31,6 +31,7 @@ else
     Invoke-WebRequest "$DxFeedGraalCxxApiArtifactUri" -OutFile "$DxFeedGraalCxxApiArtifactPath"
     Expand-Archive "$DxFeedGraalCxxApiArtifactPath" -DestinationPath "$PathToDownload" -Force
 
+# vs-project-sample
 
     $VsProjectSamplePath = "$PSScriptRoot/../vs-project-sample"
     $VsProjectSampleThirdPartyPath = "$VsProjectSamplePath/third_party/dxfeed-graal-cxx-api"
@@ -44,5 +45,7 @@ else
     (Get-Content $VsProjectSampleReadmePath -raw) -replace "$DxFeedGraalCxxApiUri/releases/download/(v\d+\.\d+\.\d+[^)]*)", "$DxFeedGraalCxxApiArtifactUri" |
             Set-Content $VsProjectSampleReadmePath
 
-    Get-Content $VsProjectSampleReadmePath -raw
+#    Get-Content $VsProjectSampleReadmePath -raw
+
+
 }
