@@ -5,7 +5,6 @@
         The dxFeed Graal CXX API version (https://github.com/dxFeed/dxfeed-graal-cxx-api).
     .PARAMETER PathToDownload
         The path for downloading artifacts.
- #>
 #>
 param (
     [Parameter(Mandatory = $true)]
@@ -31,7 +30,7 @@ else
     Invoke-WebRequest "$DxFeedGraalCxxApiArtifactUri" -OutFile "$DxFeedGraalCxxApiArtifactPath"
     Expand-Archive "$DxFeedGraalCxxApiArtifactPath" -DestinationPath "$PathToDownload" -Force
 
-# vs-project-sample
+    # vs-project-sample
 
     $VsProjectSamplePath = "$PSScriptRoot/../vs-project-sample"
     $VsProjectSampleThirdPartyPath = "$VsProjectSamplePath/third_party/dxfeed-graal-cxx-api"
@@ -40,12 +39,10 @@ else
     Get-ChildItem "$VsProjectSampleThirdPartyPath"
 
     $VsProjectSampleReadmePath = "$VsProjectSamplePath/README.md"
-    (Get-Content $VsProjectSampleReadmePath -raw) -replace "$DxFeedGraalCxxApiUri/releases/tag/(v\d+\.\d+\.\d+[^)]*)", "$DxFeedGraalCxxApiArtifactUri" |
-            Set-Content $VsProjectSampleReadmePath
-    (Get-Content $VsProjectSampleReadmePath -raw) -replace "$DxFeedGraalCxxApiUri/releases/download/(v\d+\.\d+\.\d+[^)]*)", "$DxFeedGraalCxxApiArtifactUri" |
-            Set-Content $VsProjectSampleReadmePath
+    (Get-Content $VsProjectSampleReadmePath) -replace "$DxFeedGraalCxxApiUri/releases/tag/(v\d+\.\d+\.\d+[^)]*)", "$DxFeedGraalCxxApiArtifactUri" | Set-Content $VsProjectSampleReadmePath
+    (Get-Content $VsProjectSampleReadmePath) -replace "$DxFeedGraalCxxApiUri/releases/download/(v\d+\.\d+\.\d+[^)]*)", "$DxFeedGraalCxxApiArtifactUri" | Set-Content $VsProjectSampleReadmePath
 
-#    Get-Content $VsProjectSampleReadmePath -raw
+    #    Get-Content $VsProjectSampleReadmePath -raw
 
 
 }
